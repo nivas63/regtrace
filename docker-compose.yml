@@ -1,0 +1,62 @@
+name: regtrace
+
+x-backend-env: &backend-env
+  # The app connects as the least-privilege role (subject to row-level security);
+  # migrations run as the owner role.
+  DATABASE_URL: postgresql+asyncpg://regtrace_app:${APP_DB_PASSWORD:-regtrace_app}@postgres:5432/${POSTGRES_DB:-regtrace}
+  MIGRATION_DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-regtrace}:${POSTGRES_PASSWORD:-regtrace}@postgres:5432/${POSTGRES_DB:-regtrace}
+  APP_DB_PASSWORD: ${APP_DB_PASSWORD:-regtrace_app}
+  STORAGE_DIR: /data/uploads
+  MODEL_CACHE_DIR: /data/models
+  DATA_DIR: /data/corpus
+  CORS_ORIGINS: '["http://localhost:3000"]'
+  # Reach Ollama running on the host machine, if enabled.
+  OLLAMA_BASE_URL: ${OLLAMA_BASE_URL_DOCKER:-http://host.docker.internal:11434/v1}
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-regtrace}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-regtrace}
+      POSTGRES_DB: ${POSTGRES_DB:-regtrace}
+    ports:
+      - "127.0.0.1:5432:5432"   # bound to localhost only
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build: ./backend
+    env_file: .env
+    environment: *backend-env
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - uploads:/data/uploads
+      - models:/data/models
+      - ./data:/data/corpus
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000/api/v1}
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
+  uploads:
+  models:

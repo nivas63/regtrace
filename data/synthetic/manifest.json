@@ -1,0 +1,28 @@
+{
+  "generated_on": "2026-09-25",
+  "synthetic": true,
+  "disclaimer": "SYNTHETIC DEMONSTRATION DOCUMENT. Modelled on the structure of banking regulation for evaluation purposes only. Not an actual regulatory instrument.",
+  "bank": "Aravali Bank Ltd (Synthetic)",
+  "regulations": [
+    {
+      "doc_id": "SYN-KYC-v1",
+      "file": "synthetic/regulations/SYN_KYC_Master_Direction_2024_v1.pdf",
+      "ref_no": "SYN/KYC/2024/01"
+    },
+    {
+      "doc_id": "SYN-KYC-v2",
+      "file": "synthetic/regulations/SYN_KYC_Master_Direction_2025_v2.pdf",
+      "ref_no": "SYN/KYC/2025/07"
+    },
+    {
+      "doc_id": "SYN-ITG-v1",
+      "file": "synthetic/regulations/SYN_IT_Governance_Master_Direction_2024.pdf",
+      "ref_no": "SYN/ITG/2024/03"
+    },
+    {
+      "doc_id": "SYN-DPA-v1",
+      "file": "synthetic/regulations/SYN_Data_Retention_Guidelines_2025.pdf",
+      "ref_no": "SYN/DPA/2025/02"
+    }
+  ]
+}

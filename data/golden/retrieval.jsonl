@@ -1,0 +1,25 @@
+{"query": "How often must customer risk categorisation be reviewed?", "relevant": [{"doc_id": "SYN-KYC-v1", "section_path": "6.2"}]}
+{"query": "periodic updation for high risk customers", "relevant": [{"doc_id": "SYN-KYC-v1", "section_path": "7.1"}]}
+{"query": "deadline for filing suspicious transaction reports", "relevant": [{"doc_id": "SYN-KYC-v1", "section_path": "10.1"}]}
+{"query": "CTR submission timeline", "relevant": [{"doc_id": "SYN-KYC-v1", "section_path": "10.2"}]}
+{"query": "how long to keep customer identification records", "relevant": [{"doc_id": "SYN-KYC-v1", "section_path": "9.2"}]}
+{"query": "beneficial ownership threshold for legal entities", "relevant": [{"doc_id": "SYN-KYC-v1", "section_path": "5.3"}]}
+{"query": "video KYC recording requirements", "relevant": [{"doc_id": "SYN-KYC-v1", "section_path": "8.2"}]}
+{"query": "alert closure timeline for transaction monitoring", "relevant": [{"doc_id": "SYN-KYC-v1", "section_path": "11.2"}]}
+{"query": "KYC training frequency for frontline staff", "relevant": [{"doc_id": "SYN-KYC-v1", "section_path": "12.1"}]}
+{"query": "internal audit of KYC compliance frequency", "relevant": [{"doc_id": "SYN-KYC-v1", "section_path": "13.1"}]}
+{"query": "multi-factor authentication privileged users", "relevant": [{"doc_id": "SYN-ITG-v1", "section_path": "3.1"}]}
+{"query": "user access review frequency", "relevant": [{"doc_id": "SYN-ITG-v1", "section_path": "3.2"}]}
+{"query": "log retention period for privileged sessions", "relevant": [{"doc_id": "SYN-ITG-v1", "section_path": "3.3"}]}
+{"query": "time limit to apply critical patches", "relevant": [{"doc_id": "SYN-ITG-v1", "section_path": "4.1"}]}
+{"query": "penetration testing frequency", "relevant": [{"doc_id": "SYN-ITG-v1", "section_path": "4.2"}]}
+{"query": "disaster recovery drill frequency", "relevant": [{"doc_id": "SYN-ITG-v1", "section_path": "5.1"}]}
+{"query": "backup restoration testing", "relevant": [{"doc_id": "SYN-ITG-v1", "section_path": "5.3"}]}
+{"query": "report cyber incident to regulator within how many hours", "relevant": [{"doc_id": "SYN-ITG-v1", "section_path": "6.1"}]}
+{"query": "root cause analysis of critical incidents", "relevant": [{"doc_id": "SYN-ITG-v1", "section_path": "6.2"}]}
+{"query": "CISO reporting line", "relevant": [{"doc_id": "SYN-ITG-v1", "section_path": "2.2"}]}
+{"query": "erase personal data after account closure", "relevant": [{"doc_id": "SYN-DPA-v1", "section_path": "2.1"}]}
+{"query": "personal data in logs retention limit", "relevant": [{"doc_id": "SYN-DPA-v1", "section_path": "2.2"}]}
+{"query": "personal data breach notification", "relevant": [{"doc_id": "SYN-DPA-v1", "section_path": "3.1"}]}
+{"query": "data protection officer appointment", "relevant": [{"doc_id": "SYN-DPA-v1", "section_path": "4.2"}]}
+{"query": "IT strategy committee meeting frequency", "relevant": [{"doc_id": "SYN-ITG-v1", "section_path": "2.1"}]}

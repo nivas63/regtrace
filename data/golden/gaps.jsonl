@@ -1,0 +1,11 @@
+{"doc_id": "SYN-KYC-v1", "section_path": "13.1", "gap_types": ["STALE_EVIDENCE"]}
+{"doc_id": "SYN-KYC-v1", "section_path": "11.2", "gap_types": ["INEFFECTIVE_CONTROL", "PARTIAL_CONTROL"]}
+{"doc_id": "SYN-ITG-v1", "section_path": "2.2", "gap_types": ["MISSING_CONTROL"]}
+{"doc_id": "SYN-ITG-v1", "section_path": "3.1", "gap_types": ["MISSING_EVIDENCE"]}
+{"doc_id": "SYN-ITG-v1", "section_path": "4.1", "gap_types": ["PARTIAL_CONTROL", "INEFFECTIVE_CONTROL"]}
+{"doc_id": "SYN-ITG-v1", "section_path": "4.2", "gap_types": ["INEFFECTIVE_CONTROL"]}
+{"doc_id": "SYN-ITG-v1", "section_path": "5.1", "gap_types": ["PARTIAL_CONTROL", "INEFFECTIVE_CONTROL", "STALE_EVIDENCE"]}
+{"doc_id": "SYN-ITG-v1", "section_path": "6.2", "gap_types": ["MISSING_CONTROL"]}
+{"doc_id": "SYN-DPA-v1", "section_path": "2.1", "gap_types": ["MISSING_CONTROL", "CONFLICTING_REGULATION"]}
+{"doc_id": "SYN-DPA-v1", "section_path": "2.2", "gap_types": ["MISSING_CONTROL", "CONFLICTING_REGULATION"]}
+{"doc_id": "SYN-DPA-v1", "section_path": "4.2", "gap_types": ["MISSING_CONTROL"]}

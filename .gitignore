@@ -1,0 +1,24 @@
+# secrets
+.env
+
+# python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.pytest_storage/
+.mypy_cache/
+.ruff_cache/
+backend/data/
+
+# node / next
+node_modules/
+.next/
+*.tsbuildinfo
+
+# runtime data and media
+data/uploads/
+*.mp4
+*.log
+pitch/slide-*.jpg
